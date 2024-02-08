@@ -141,21 +141,25 @@ html, body
     text-align: end;
     font-weight: 1000;
     font-size: 18px;
+    margin-right: 10%;
+    margin-top: 10px;
+    margin-bottom: 40px;
 }
 
 .action {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin: 100px 0;
     color: #E5E7EB;
-
+    /* flex: 1; */
+    flex-wrap: wrap;
 }
 .action-card {
     display: flex;
     text-align: center;
     background-color: #3882F6;
-    width: 60%;
+    /* width: 60%; */
     align-items: center;
     /* align-content: center; */
     border-radius: 10px;
@@ -167,16 +171,21 @@ html, body
     font-size: 18px;
 }
 .action-button {
-    margin: 40px 80px;
-
+    /* margin: 40px 80px; */
+    font-size: 18px;
+    flex-shrink: 0;
 }
 .action-button button {
-    width: 100px;
-    height: 30px;
+    /* max-width: 160px; */
+    height: 40px;
+    padding: 0 20px;
     color: #E5E7EB;
     background-color: #3882F6;
     border: 2px solid #E5E7EB;
     border-radius: 8px;
+    font-weight: 500;
+    font-size: 18px;
+    margin-right: 50px;
 }
 
 .action-text p {
