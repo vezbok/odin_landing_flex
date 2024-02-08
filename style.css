@@ -17,7 +17,7 @@ html, body
     background-color: #1F2937;
 }
 
-.header, .some-rand, .first
+.header, .some-rand, .first, .quote, .footer
  {
     padding: 0 20%;
 
@@ -66,7 +66,7 @@ html, body
 }
 .first-img {
     background-color: gray;
-    width: 450px;
+    width: 350px;
     height: 200px;
     display: flex;
     border: 1px solid transparent;
@@ -104,6 +104,8 @@ html, body
     display: flex;
     justify-content: center;
     gap: 32px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
 
 }
 .card {
@@ -114,10 +116,78 @@ html, body
     color: darkgray;
     font-size: 16px;
     text-align: center;
+    padding-left: 10px;
 }
 .card-img {
     width: 120px;
     height: 120px;
     border: 5px solid #3882F6 ;
     border-radius: 10px;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+.quote-author {
+    text-align: end;
+    font-weight: 1000;
+    font-size: 18px;
+}
+
+.action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+    color: #E5E7EB;
+
+}
+.action-card {
+    display: flex;
+    text-align: center;
+    background-color: #3882F6;
+    width: 60%;
+    align-items: center;
+    /* align-content: center; */
+    border-radius: 10px;
+}
+
+.action-text {
+    padding: 40px 80px;
+    text-align: left;
+    font-size: 18px;
+}
+.action-button {
+    margin: 40px 80px;
+
+}
+.action-button button {
+    width: 100px;
+    height: 30px;
+    color: #E5E7EB;
+    background-color: #3882F6;
+    border: 2px solid #E5E7EB;
+    border-radius: 8px;
+}
+
+.action-text p {
+    padding: 0;
+    margin: 0;
+}
+.bold-text {
+    font-weight: bold;
+}
+.footer {
+    text-align: center;
+    color: #E5E7EB;
+    padding: 20px 0;
 }
